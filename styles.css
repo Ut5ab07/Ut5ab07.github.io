@@ -409,7 +409,7 @@ a {
     bottom: -35px;
     left: 50%;
     transform: translateX(-50%) scale(0);
-   background-color: var(--primary-color);
+    background-color: var(--primary-color);
     color: var(--text-light);
     padding: 0.5rem 0.75rem;
     border-radius: 6px;
@@ -454,7 +454,7 @@ a {
 
 /* Dark mode icon colors */
 [data-theme="dark"] .skill-icon img {
-    filter: grayscale(100%) brightness(2);
+    filter: grayscale(100%) brightness(10);
 }
 
 [data-theme="dark"] .skill-icon:hover img {
@@ -685,3 +685,4 @@ a {
     }
 
 }
+
