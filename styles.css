@@ -2,17 +2,17 @@
    CSS VARIABLES - LIGHT MODE (DEFAULT)
    ======================================== */
 :root {
-    --primary-color: #2DD4BF;      /* Soft green/earth tone */
+    --primary-color: #2DD4BF;
     --primary-dark: #14B8A6;
     --text-dark: #1E293B;
     --text-light: #FFFFFF;
-    --text-gray: #718096;
-    --bg-light: #F1F5F9;
-    --bg-white: #FFFFFF;
+    --text-gray: #64748B;           
+    --bg-light: #E2E8F0;           
+    --bg-white: #F1F5F9;            
     --shadow: rgba(0, 0, 0, 0.1);
     --transition: all 0.3s ease;
-    --navbar-bg: rgba(255, 255, 255, 0.95);
-    --card-bg: #FFFFFF;
+    --navbar-bg: rgba(241, 245, 249, 0.95);  
+    --card-bg: #F8FAFC;             
     --hero-overlay: rgba(0, 0, 0, 0.5);
 }
 
@@ -31,6 +31,25 @@
     --navbar-bg: rgba(45, 55, 72, 0.95);
     --card-bg: #2D3748;
     --hero-overlay: rgba(0, 0, 0, 0.65);
+}
+
+[data-theme="dark"] .about,
+[data-theme="dark"] .projects {
+    background-color: rgba(26, 32, 44, 0.9);
+}
+
+[data-theme="dark"] .skills,
+[data-theme="dark"] .contact {
+    background-color: rgba(45, 55, 72, 0.9);
+}
+
+/* Dark mode - make contact icons white */
+[data-theme="dark"] .contact-icon img {
+    filter: brightness(0) invert(1);
+}
+
+[data-theme="dark"] .contact-link:hover .contact-icon img {
+    filter: brightness(1) invert(0);
 }
 
 /* ========================================
@@ -339,7 +358,7 @@ a {
    ======================================== */
 .about {
     padding: 6rem 0;
-    background-color: var(--bg-light);
+    background-color: rgba(226, 232, 240, 0.9);
 }
 
 .about-content {
@@ -355,7 +374,7 @@ a {
    ======================================== */
 .skills {
     padding: 6rem 0;
-    background-color: var(--bg-white);
+    background-color: rgba(241, 245, 249, 0.9);
 }
 
 .skills-grid {
@@ -466,7 +485,7 @@ a {
    ======================================== */
 .projects {
     padding: 6rem 0;
-    background-color: var(--bg-light);
+    background-color: rgba(226, 232, 240, 0.9);
 }
 
 .projects-grid {
@@ -523,7 +542,7 @@ a {
    ======================================== */
 .contact {
     padding: 6rem 0;
-    background-color: var(--bg-white);
+    background-color: rgba(241, 245, 249, 0.9);
 }
 
 .contact-content {
@@ -685,4 +704,5 @@ a {
     }
 
 }
+
 
