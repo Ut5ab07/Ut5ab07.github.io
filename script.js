@@ -11,7 +11,7 @@ document.addEventListener('DOMContentLoaded', function() {
     const themeToggle = document.querySelector('.theme-toggle');
     const htmlElement = document.documentElement;
     
-    // Check for saved theme preference or default to light mode
+    // Check for saved theme preference or default to dark mode
     const currentTheme = localStorage.getItem('theme') || 'dark';
     htmlElement.setAttribute('data-theme', currentTheme);
     
@@ -213,4 +213,5 @@ function debounce(func, wait = 20, immediate = true) {
         timeout = setTimeout(later, wait);
         if (callNow) func.apply(context, args);
     };
+
 }
